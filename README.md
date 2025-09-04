@@ -128,10 +128,3 @@ All content is directly in the component files and can be easily updated by modi
 ## License
 
 This project is proprietary to DefenX.
-
-## Contact
-
-For questions about this website or DefenX solutions:
-- Email: contact@defenx.com
-- Phone: +1 (555) 123-4567
-- Location: Washington, DC Metro Area
