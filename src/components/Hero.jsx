@@ -53,10 +53,15 @@ const Hero = () => {
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
-              <button className="btn-secondary flex items-center justify-center">
+              <a 
+                href="https://drive.google.com/file/d/1loNTe5-RF-wZDM4AfJkKO5wmT43oJlta/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center justify-center"
+              >
                 <Play className="mr-2 w-5 h-5" />
                 Watch Demo
-              </button>
+              </a>
             </motion.div>
 
             {/* Stats */}
