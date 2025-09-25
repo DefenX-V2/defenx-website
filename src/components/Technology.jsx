@@ -100,12 +100,12 @@ const Technology = () => {
     },
     pins: {
       title: "Wearable PIN Devices",
-      description: "One-press verification and reporting for busy teachers and staff, with visual alert indicators.",
+      description: "Designed for busy teachers and staff who don't always have time to check their phones. One press verifies or reports a threat, with no screen needed.",
       features: [
-        { icon: Shield, text: "One-press operation" },
-        { icon: Zap, text: "No screen needed" },
-        { icon: Wifi, text: "Wireless connectivity" },
-        { icon: Camera, text: "Visual alert indicators" }
+        { icon: Shield, text: "One-press verification or reporting" },
+        { icon: Zap, text: "No screen needed - simple operation" },
+        { icon: Wifi, text: "Light up when alerts are sent" },
+        { icon: Camera, text: "Perfect for busy educators" }
       ],
       visual: (
         <div className="bg-gradient-to-br from-burgundy/10 to-burgundy/20 rounded-xl p-8 text-center">

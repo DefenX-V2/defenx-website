@@ -6,18 +6,12 @@ const Problem = () => {
   const stats = [
     {
       icon: AlertTriangle,
-      number: "144",
-      label: "School shooting incidents in 2022",
-      description: "A 31% increase from the previous year"
+      number: "390K+",
+      label: "Students experienced gun violence",
+      description: "Since 1999 in the U.S."
     },
     {
       icon: TrendingUp,
-      number: "31%",
-      label: "Increase from 2021",
-      description: "Nearly one incident every 2-3 days"
-    },
-    {
-      icon: DollarSign,
       number: "$350K+",
       label: "Spent on failing safety systems",
       description: "Current solutions often fail when needed most"
@@ -27,14 +21,21 @@ const Problem = () => {
       number: "5min",
       label: "Average school shooting duration",
       description: "Lives lost every 5-15 seconds"
+    },
+    {
+      icon: DollarSign,
+      number: "$100/cam",
+      label: "Legacy system costs",
+      description: "Per camera per month"
     }
   ]
 
   const problems = [
     "Only detect gunshot sounds, leading to false alarms and panic",
-    "Can't connect directly to police, wasting precious minutes",
-    "Complex systems that are difficult to use during emergencies",
-    "High maintenance costs with poor reliability"
+    "Don't provide communication and support to the police, wasting precious minutes",
+    "Complex systems that are difficult to use during emergencies", 
+    "Prohibitively expensive with high subscription and maintenance fees",
+    "Often fail when schools need them most - these failures cost lives"
   ]
 
   return (
@@ -52,8 +53,9 @@ const Problem = () => {
             <span className="text-gradient"> Solving</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            While teachers, coaches, and mentors dedicate themselves to protecting and nurturing students, 
-            who is protecting them? Current safety systems are failing when they're needed most.
+            As students, we've experienced how much education shapes our futures. Behind every lesson and every challenge, 
+            there were teachers, coaches, and peers who guided us, inspired us, and created an environment where we felt safe to thrive.
+            But while they've always protected us—who is protecting them?
           </p>
         </motion.div>
 

@@ -25,8 +25,8 @@ const Solution = () => {
     {
       icon: Heart,
       title: "Post-Incident Support",
-      description: "Comprehensive recovery framework with AI analysis and mental health resources",
-      features: ["24-hour automatic video storage", "AI-powered incident analysis", "Mental health guides"]
+      description: "Protection doesn't end when the immediate threat is neutralized. We offer comprehensive recovery framework for schools.",
+      features: ["24-hour automatic video storage for law enforcement", "AI-powered chatbot for incident queries", "Mental health guides for stakeholders", "Direct incident analysis without manual review"]
     }
   ]
 
@@ -146,12 +146,38 @@ const Solution = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             Works with Your Existing Infrastructure
           </h3>
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-gray-600 mb-8">
             DefenX works with the IP cameras schools already have. We provide AI-powered detection, tracking, 
-            communication, and post-incident support, plus a setup interface and cloud backend. Choose from 
-            local deployment for maximum privacy or cloud deployment for lower costs and easier scalability. 
-            Setup takes less than 2 hours—go from unprotected to fully secured in one afternoon.
+            communication, and post-incident support, plus a setup interface and cloud backend.
           </p>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-blue-50 rounded-lg p-6">
+              <h4 className="text-lg font-semibold text-blue-900 mb-3">Local Deployment</h4>
+              <p className="text-blue-700 mb-3">Best for maximum privacy, with no data leaving the premises</p>
+              <ul className="text-sm text-blue-600 space-y-1">
+                <li>• High-compute technology installed on-premises</li>
+                <li>• Maximum data privacy and security</li>
+                <li>• Complete control over your data</li>
+              </ul>
+            </div>
+            
+            <div className="bg-green-50 rounded-lg p-6">
+              <h4 className="text-lg font-semibold text-green-900 mb-3">Cloud Deployment</h4>
+              <p className="text-green-700 mb-3">Ideal for schools that prefer lower upfront costs and easier scalability</p>
+              <ul className="text-sm text-green-600 space-y-1">
+                <li>• Lower initial investment</li>
+                <li>• Easy scaling and updates</li>
+                <li>• Professional maintenance included</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="text-center bg-orange-50 rounded-lg p-4 mb-6">
+            <p className="text-orange-800 font-semibold">
+              Setup takes less than 8 hours—go from unprotected to fully secured in one afternoon.
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-primary">Schedule Demo</button>
             <button className="btn-secondary">Learn More</button>

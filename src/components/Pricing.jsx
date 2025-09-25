@@ -47,39 +47,93 @@ const Pricing = () => {
           </p>
         </motion.div>
 
-        {/* Pricing Card */}
+        {/* Pricing Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto mb-16"
+          className="max-w-6xl mx-auto mb-16"
         >
-          <div className="bg-white rounded-2xl shadow-elegant overflow-hidden">
-            <div className="bg-burgundy text-white text-center py-6">
-              <h3 className="text-2xl font-bold mb-2">DefenX Complete</h3>
-              <p className="text-burgundy-100">Comprehensive school safety solution</p>
+          <div className="bg-white rounded-2xl shadow-elegant p-8">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Choose Your Deployment Option
+              </h3>
+              <p className="text-gray-600">
+                We offer three main school sizes, each with a varying number of camera streams depending on GPU requirements.
+              </p>
             </div>
             
-            <div className="p-8 lg:p-12">
-              <div className="grid lg:grid-cols-2 gap-12">
-                <div>
-                  <div className="mb-8">
-                    <div className="flex items-baseline mb-4">
-                      <span className="text-4xl font-bold text-gray-900">$10,000</span>
-                      <span className="text-gray-600 ml-2">or less setup</span>
-                    </div>
-                    <div className="flex items-baseline mb-6">
-                      <span className="text-4xl font-bold text-burgundy">$99</span>
-                      <span className="text-gray-600 ml-2">per month</span>
-                    </div>
-                    <p className="text-gray-600">
-                      We offer flexible pricing for different school sizes with varying camera streams. 
-                      Choose onsite processing for maximum privacy or cloud processing for lower costs.
-                    </p>
+            {/* Deployment Cards */}
+            <div className="grid lg:grid-cols-2 gap-6 mb-10">
+              {/* Local Deployment */}
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-4 h-4 bg-blue-600 rounded-full mr-3"></div>
+                  <h4 className="text-lg font-bold text-gray-900">Local Deployment</h4>
+                </div>
+                <p className="text-gray-600 text-center mb-6">Maximum privacy and control</p>
+                
+                <div className="space-y-3 mb-6">
+                  <div className="flex justify-between items-center p-3 bg-white rounded border">
+                    <span className="text-sm font-medium text-gray-700">Initial Setup Fee</span>
+                    <span className="text-sm font-bold text-gray-900">Contact Us</span>
                   </div>
+                  
+                  <div className="flex justify-between items-center p-3 bg-white rounded border">
+                    <span className="text-sm font-medium text-gray-700">Annual Subscription</span>
+                    <span className="text-sm font-bold text-gray-900">Contact Us</span>
+                  </div>
+                </div>
 
-                  <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-gray-900 mb-4">What's Included:</h4>
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <p className="text-sm text-gray-700">
+                    High-compute technology installed on-premises for maximum privacy, with no data leaving the premises
+                  </p>
+                </div>
+              </div>
+
+              {/* Cloud Deployment */}
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-4 h-4 bg-green-600 rounded-full mr-3"></div>
+                  <h4 className="text-lg font-bold text-gray-900">Cloud Deployment</h4>
+                </div>
+                <p className="text-gray-600 text-center mb-6">Lower costs and easy scaling</p>
+                
+                <div className="space-y-3 mb-6">
+                  <div className="flex justify-between items-center p-3 bg-white rounded border">
+                    <span className="text-sm font-medium text-gray-700">Initial Setup Fee</span>
+                    <span className="text-sm font-bold text-gray-900">Contact Us</span>
+                  </div>
+                  
+                  <div className="flex justify-between items-center p-3 bg-white rounded border">
+                    <span className="text-sm font-medium text-gray-700">Annual Subscription</span>
+                    <span className="text-sm font-bold text-gray-900">Contact Us</span>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                  <p className="text-sm text-gray-700">
+                    Ideal for schools that prefer lower upfront costs and easier scalability
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Both Options Include Section */}
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <div className="text-center mb-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Both Options Include
+                </h3>
+                <p className="text-gray-600 text-sm">All features and services included with either deployment choice</p>
+              </div>
+              
+              <div className="grid lg:grid-cols-3 gap-8">
+                {/* Features Column */}
+                <div className="lg:col-span-2">
+                  <div className="grid md:grid-cols-2 gap-4">
                     {pricingFeatures.map((feature, index) => (
                       <motion.div
                         key={index}
@@ -87,89 +141,72 @@ const Pricing = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.05 }}
-                        className="flex items-center space-x-3"
+                        className="flex items-center space-x-3 p-3 bg-white rounded-lg border border-gray-200"
                       >
-                        <div className="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                          <Check className="w-4 h-4 text-green-600" />
+                        <div className="flex-shrink-0 w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                          <Check className="w-3 h-3 text-green-600" />
                         </div>
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-sm text-gray-700">{feature}</span>
                       </motion.div>
                     ))}
                   </div>
                 </div>
 
-                <div className="lg:pl-8">
-                  <div className="bg-cream rounded-xl p-6 mb-6">
-                    <h4 className="text-xl font-semibold text-gray-900 mb-4">Cost Savings</h4>
+                {/* Benefits & CTA Column */}
+                <div>
+                  <div className="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-4">Why Choose DefenX?</h4>
                     <div className="space-y-3">
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Legacy systems (monthly)</span>
-                        <span className="text-red-600 font-semibold">$750+</span>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <p className="text-sm font-medium text-gray-900">Cost Effective</p>
+                          <p className="text-xs text-gray-600">3x less expensive than competitors</p>
+                        </div>
                       </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">DefenX (monthly)</span>
-                        <span className="text-green-600 font-semibold">$99</span>
+                      
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <p className="text-sm font-medium text-gray-900">Superior Accuracy</p>
+                          <p className="text-xs text-gray-600">99% precision detection</p>
+                        </div>
                       </div>
-                      <div className="border-t pt-3 flex justify-between">
-                        <span className="font-semibold">Monthly Savings</span>
-                        <span className="text-burgundy font-bold">$651+</span>
+                      
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <p className="text-sm font-medium text-gray-900">Flexible Options</p>
+                          <p className="text-xs text-gray-600">Local or cloud deployment</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <p className="text-sm font-medium text-gray-900">Quick Setup</p>
+                          <p className="text-xs text-gray-600">Less than 8 hours to full deployment</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <button className="btn-primary w-full mb-4">
+                  <a href="mailto:sgubba@terpmail.umd.edu" className="btn-primary w-full mb-3 text-sm py-3 block text-center">
                     Get Started Today
-                  </button>
-                  <button className="btn-secondary w-full">
+                  </a>
+                  <button className="btn-secondary w-full text-sm py-3">
                     Schedule Demo
                   </button>
+                  
+                  <p className="text-center text-xs text-gray-500 mt-4">
+                    60%+ gross margin maintained across all plans
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Comparison Table */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-white rounded-2xl shadow-elegant overflow-hidden mb-16"
-        >
-          <div className="p-8">
-            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
-              DefenX vs Legacy Systems
-            </h3>
-            
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b">
-                    <th className="text-left py-4 px-6 font-semibold text-gray-900">Feature</th>
-                    <th className="text-center py-4 px-6 font-semibold text-red-600">Legacy Systems</th>
-                    <th className="text-center py-4 px-6 font-semibold text-burgundy">DefenX</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparison.map((row, index) => (
-                    <motion.tr
-                      key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.05 }}
-                      className="border-b hover:bg-gray-50"
-                    >
-                      <td className="py-4 px-6 font-medium text-gray-900">{row.feature}</td>
-                      <td className="py-4 px-6 text-center text-red-600">{row.legacy}</td>
-                      <td className="py-4 px-6 text-center text-green-600 font-semibold">{row.defenx}</td>
-                    </motion.tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

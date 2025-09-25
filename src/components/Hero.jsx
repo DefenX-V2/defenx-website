@@ -49,10 +49,10 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="btn-primary flex items-center justify-center">
+              <a href="mailto:sgubba@terpmail.umd.edu" className="btn-primary flex items-center justify-center">
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
+              </a>
               <a 
                 href="https://drive.google.com/file/d/1loNTe5-RF-wZDM4AfJkKO5wmT43oJlta/view?usp=sharing"
                 target="_blank"
