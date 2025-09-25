@@ -194,9 +194,6 @@ const Pricing = () => {
                   <a href="mailto:sgubba@terpmail.umd.edu" className="btn-primary w-full mb-3 text-sm py-3 block text-center">
                     Get Started Today
                   </a>
-                  <button className="btn-secondary w-full text-sm py-3">
-                    Schedule Demo
-                  </button>
                   
                   <p className="text-center text-xs text-gray-500 mt-4">
                     60%+ gross margin maintained across all plans

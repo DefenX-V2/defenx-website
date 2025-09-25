@@ -82,14 +82,6 @@ const Footer = () => {
               Join schools across the nation in creating safer learning environments. 
               Schedule a demo today and see DefenX in action.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-burgundy font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300">
-                Schedule Demo
-              </button>
-              <button className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-burgundy transition-all duration-300">
-                Contact Sales
-              </button>
-            </div>
           </div>
         </motion.div>
       </div>

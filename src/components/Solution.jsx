@@ -178,10 +178,6 @@ const Solution = () => {
               Setup takes less than 8 hours—go from unprotected to fully secured in one afternoon.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">Schedule Demo</button>
-            <button className="btn-secondary">Learn More</button>
-          </div>
         </motion.div>
       </div>
     </section>
