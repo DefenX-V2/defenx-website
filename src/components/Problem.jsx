@@ -18,7 +18,7 @@ const Problem = () => {
     },
     {
       icon: Clock,
-      number: "5min",
+      number: "5 min",
       label: "Average school shooting duration",
       description: "Lives lost every 5-15 seconds"
     },

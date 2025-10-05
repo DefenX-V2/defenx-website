@@ -4,7 +4,7 @@ import { DollarSign, Check } from 'lucide-react'
 
 const Pricing = () => {
   const pricingFeatures = [
-    "AI monitoring for up to 15 camera streams",
+    "AI monitoring for 100+ camera streams",
     "Real-time detection and tracking",
     "Mobile app with multi-level alerts",
     "PIN devices for staff",
@@ -42,8 +42,7 @@ const Pricing = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             The current market is broken from a cost perspective. Legacy systems charge close to $100 
-            per camera stream per month, while some deployments range from $65,000 to $90,000 per square mile. 
-            DefenX provides an affordable and effective alternative that leverages existing infrastructure.
+            per camera stream per month. DefenX provides an affordable and effective alternative that leverages existing infrastructure.
           </p>
         </motion.div>
 
@@ -161,7 +160,7 @@ const Pricing = () => {
                         <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <p className="text-sm font-medium text-gray-900">Cost Effective</p>
-                          <p className="text-xs text-gray-600">3x less expensive than competitors</p>
+                          <p className="text-xs text-gray-600">3x cheaper than competitors</p>
                         </div>
                       </div>
                       
@@ -194,10 +193,6 @@ const Pricing = () => {
                   <a href="mailto:sgubba@terpmail.umd.edu" className="btn-primary w-full mb-3 text-sm py-3 block text-center">
                     Get Started Today
                   </a>
-                  
-                  <p className="text-center text-xs text-gray-500 mt-4">
-                    60%+ gross margin maintained across all plans
-                  </p>
                 </div>
               </div>
             </div>

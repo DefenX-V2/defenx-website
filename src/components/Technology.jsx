@@ -15,10 +15,10 @@ const Technology = () => {
   const techSpecs = {
     detection: {
       title: "AI-Powered Detection System",
-      description: "Our state-of-the-art model runs on NVIDIA RTX GPU for fast, secure on-site processing.",
+      description: "Our state-of-the-art model runs on GPUs for fast, secure on-site processing.",
       features: [
         { icon: Zap, text: "Under 50 milliseconds detection time" },
-        { icon: Cpu, text: "NVIDIA RTX GPU processing" },
+        { icon: Cpu, text: "State-of-the-art GPU processing" },
         { icon: Shield, text: "99% mean average precision" },
         { icon: Camera, text: "Mobile app verification" }
       ],
@@ -34,7 +34,7 @@ const Technology = () => {
             </div>
             <div className="flex justify-between text-sm">
               <span>Mobile Verification</span>
-              <span className="text-green-600">40% reduction in false positives</span>
+              <span className="text-green-600">Prevents false positives from escalating</span>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Technology = () => {
       features: [
         { icon: Shield, text: "One-press verification or reporting" },
         { icon: Zap, text: "No screen needed - simple operation" },
-        { icon: Wifi, text: "Light up when alerts are sent" },
+        { icon: Wifi, text: "Silent vibration alarm when alert is received" },
         { icon: Camera, text: "Perfect for busy educators" }
       ],
       visual: (
@@ -210,13 +210,13 @@ const Technology = () => {
           <div className="bg-white rounded-xl p-6 shadow-elegant text-center">
             <Cpu className="w-12 h-12 text-burgundy mx-auto mb-4" />
             <h4 className="text-xl font-semibold text-gray-900 mb-2">On-Site Processing</h4>
-            <p className="text-gray-600">NVIDIA RTX GPU ensures fast, secure local processing</p>
+            <p className="text-gray-600"> State-of-the-art GPU ensures fast, secure local processing</p>
           </div>
           
           <div className="bg-white rounded-xl p-6 shadow-elegant text-center">
             <Camera className="w-12 h-12 text-burgundy mx-auto mb-4" />
             <h4 className="text-xl font-semibold text-gray-900 mb-2">Camera Integration</h4>
-            <p className="text-gray-600">Works with existing IP cameras, setup in under 2 hours</p>
+            <p className="text-gray-600">Works with existing IP cameras, setup in under 8 hours</p>
           </div>
           
           <div className="bg-white rounded-xl p-6 shadow-elegant text-center">

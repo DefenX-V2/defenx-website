@@ -8,7 +8,7 @@ const Solution = () => {
       icon: Eye,
       title: "Detection",
       description: "State-of-the-art AI model with 99% mean average precision and mobile app verification",
-      features: ["99% mean average precision", "Detection in under 50 milliseconds", "Mobile app verification", "40% false positive reduction"]
+      features: ["99% mean average precision", "Detection in under 50 milliseconds", "Mobile app verification", "Prevents false positives from escalating"]
     },
     {
       icon: MapPin,
@@ -32,8 +32,8 @@ const Solution = () => {
 
   const teamStats = [
     { number: "200+", label: "Stakeholder Interviews" },
-    { number: "< 2hr", label: "Setup Time" },
-    { number: "15", label: "Camera Streams Supported" }
+    { number: "< 8 hrs", label: "Setup Time" },
+    { number: "100+", label: "Camera Streams Supported" }
   ]
 
   return (
@@ -157,7 +157,7 @@ const Solution = () => {
               <p className="text-blue-700 mb-3">Best for maximum privacy, with no data leaving the premises</p>
               <ul className="text-sm text-blue-600 space-y-1">
                 <li>• High-compute technology installed on-premises</li>
-                <li>• Maximum data privacy and security</li>
+                <li>• Lower long term costs</li>
                 <li>• Complete control over your data</li>
               </ul>
             </div>
